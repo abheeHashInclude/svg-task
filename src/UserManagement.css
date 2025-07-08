@@ -1,0 +1,61 @@
+.user-mgmt-layout {
+  display: flex;
+  gap: 2rem;
+  /* padding: 2rem 0rem; */
+}
+
+.user-table-panel {
+  flex: 1;
+  min-width: 320px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.user-table th, .user-table td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+.user-table tr.selected {
+  background: #e6f0ff;
+}
+.user-table tr:hover {
+  background: #f5faff;
+  cursor: pointer;
+}
+
+.permissions-panel {
+  flex: 2;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1.5rem;
+  min-width: 400px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.permissions-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.permissions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.permissions-table th, .permissions-table td {
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.permissions-placeholder {
+  color: #888;
+  text-align: center;
+  margin-top: 2rem;
+}
